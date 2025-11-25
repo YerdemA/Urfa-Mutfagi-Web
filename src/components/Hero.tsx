@@ -1,0 +1,43 @@
+'use client';
+
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+import styles from './Hero.module.css';
+
+export default function Hero() {
+    return (
+        <section className={styles.hero}>
+            <div className="container">
+                <motion.h1
+                    className={styles.title}
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                >
+                    Urfa Mutfak Kültürü
+                </motion.h1>
+                <motion.p
+                    className={styles.subtitle}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.4 }}
+                >
+                    Binlerce yıllık tarihin, baharatın ve ateşin harmanlandığı eşsiz lezzet yolculuğuna hoş geldiniz.
+                </motion.p>
+                <motion.div
+                    className={styles.actions}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.6 }}
+                >
+                    <Link href="/tarifler" className="btn btn-primary">
+                        Tarifleri Keşfet
+                    </Link>
+                    <Link href="/hikayeler" className="btn btn-outline">
+                        Yemek Hikayeleri
+                    </Link>
+                </motion.div>
+            </div>
+        </section>
+    );
+}
