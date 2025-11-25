@@ -2,8 +2,7 @@
 
 Bu proje, Şanlıurfa'nın köklü ve zengin yemek kültürünü modern bir web deneyimiyle dünyaya tanıtmak amacıyla geliştirilmiştir. Geleneksel lezzetler, modern web teknolojileri ve estetik bir tasarımla buluşturulmuştur.
 
-![Urfa Mutfak Kültürü](<img width="1901" height="866" alt="image" src="https://github.com/user-attachments/assets/da88d59d-799a-47db-ae56-af2377a24f42" />
-)
+<img width="1901" height="866" alt="image" src="https://github.com/user-attachments/assets/da88d59d-799a-47db-ae56-af2377a24f42" />
 
 ## 🚀 Proje Hakkında
 
