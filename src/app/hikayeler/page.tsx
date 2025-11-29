@@ -16,7 +16,13 @@ export default function StoriesPage() {
                 </p>
                 <div className="grid grid-cols-3">
                     {stories.map((dish, index) => (
-                        <DishCard key={dish.id} dish={dish} index={index} />
+                        <DishCard
+                            key={dish.id}
+                            dish={dish}
+                            index={index}
+                            buttonText="Hikayeyi Gör"
+                            linkPrefix="/hikaye"
+                        />
                     ))}
                 </div>
             </div>

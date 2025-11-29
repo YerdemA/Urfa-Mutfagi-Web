@@ -11,6 +11,7 @@ export interface Dish {
         servings: string;
     };
     story?: string;
+    motifs?: string[];
     isFeatured: boolean;
     category: "Ana Yemek" | "Tatlı" | "Çorba" | "Hamur İşi" | "Salata/Meze";
 }
@@ -51,6 +52,7 @@ export const dishes: Dish[] = [
         category: "Salata/Meze",
         isFeatured: true,
         story: "Hz. İbrahim dönemine dayanan bir rivayete göre, Nemrut yakacak odun bırakmadığı için avcılar avladıkları ceylan etini pişiremezler. Eşleri eti taşla döverek ezer, bulgur ve biberle yoğurarak yenilebilir hale getirir. Çiğ köftenin doğuşu bu yokluk hikayesine dayanır.",
+        motifs: ["/images/motifs/cig-kofte-motif-1.png", "/images/motifs/cig-kofte-motif-2.png"],
         recipe: {
             prepTime: "60 dk",
             cookTime: "0 dk",
@@ -111,7 +113,8 @@ export const dishes: Dish[] = [
         imageUrl: "/images/borani.png",
         category: "Ana Yemek",
         isFeatured: false,
-        story: "Borani, özellikle düğünlerde ve özel günlerde yapılan, yapımı zahmetli ama lezzetiyle buna değen bir yemektir. Abbasi halifesi Me'mun'un eşi Buran Hatun için yapılan düğün yemeği olduğu ve adının oradan geldiği rivayet edilir.",
+        story: "Borani, özellikle düğünlerde ve özel günlerde yapılan, yapımı zahmetli ama lezzet dolu bir yemektir. Abbasi halifesi Me'mun'un eşi Buran Hatun için yapılan düğün yemeği olduğu ve adının oradan geldiği rivayet edilir.",
+        motifs: ["/images/motifs/borani-motif-1.png"],
         recipe: {
             prepTime: "40 dk",
             cookTime: "60 dk",
@@ -155,6 +158,151 @@ export const dishes: Dish[] = [
                 "Hamurdan bezeler alıp tabak büyüklüğünde açın.",
                 "Ortasına harcı koyup kenarlarını pile şeklinde kapatın (ortası açık kalacak).",
                 "Kızgın yağda, önce harçlı tarafı sonra altı gelecek şekilde kızartın."
+            ]
+        }
+    },
+    {
+        id: "lahmacun",
+        name: "Lahmacun",
+        description: "İncecik açılmış hamur üzerine zırh kıyması, sebze ve baharat karışımının yayılmasıyla taş fırında pişirilen, limon ve maydanozla servis edilen eşsiz lezzet.",
+        imageUrl: "/images/lahmacun.png",
+        category: "Hamur İşi",
+        isFeatured: true,
+        recipe: {
+            prepTime: "45 dk",
+            cookTime: "10 dk",
+            servings: "10 Adet",
+            ingredients: [
+                "500 gr kuzu kıyma (orta yağlı)",
+                "4 adet soğan",
+                "2 diş sarımsak",
+                "3 adet domates",
+                "4 adet yeşil biber",
+                "1 demet maydanoz",
+                "1 yemek kaşığı biber salçası",
+                "1 tatlı kaşığı pul biber (isot)",
+                "Tuz, Karabiber",
+                "Hamuru için: Un, su, tuz, maya"
+            ],
+            instructions: [
+                "Sebzeleri çok ince kıyın veya robottan geçirin.",
+                "Kıyma, sebzeler ve baharatları iyice yoğurun.",
+                "Hamuru hazırlayıp mayalandırın ve ceviz büyüklüğünde bezeler alın.",
+                "Bezeleri çok ince açın.",
+                "Harcı hamurun üzerine ince bir tabaka halinde yayın.",
+                "Taş fırında veya evde yüksek dereceli fırında pişirin.",
+                "Limon ve maydanoz ile sıcak servis yapın."
+            ]
+        }
+    },
+    {
+        id: "patlicanli-kebap",
+        name: "Patlıcanlı Kebap",
+        description: "Urfa'nın tescilli lezzeti. Zırh kıyması köftelerin ve patlıcan dilimlerinin şişe dizilip kömür ateşinde pişirilmesiyle hazırlanır.",
+        imageUrl: "/images/patlicanli-kebap.png",
+        category: "Ana Yemek",
+        isFeatured: true,
+        recipe: {
+            prepTime: "30 dk",
+            cookTime: "20 dk",
+            servings: "4 Kişilik",
+            ingredients: [
+                "1 kg kemer patlıcan",
+                "750 gr kuzu kıyma (zırh)",
+                "Tuz, Karabiber",
+                "Servis için: Lavaş, közlenmiş biber ve domates"
+            ],
+            instructions: [
+                "Patlıcanları 2-3 parmak kalınlığında dilimleyin.",
+                "Kıymayı tuz ve karabiberle yoğurup ceviz büyüklüğünde köfteler hazırlayın.",
+                "Şişe bir patlıcan bir köfte olacak şekilde dizin.",
+                "Kömür ateşinde patlıcanlar yumuşayana kadar çevirerek pişirin.",
+                "Pişen kebabı bir tepsiye alıp üzerini kapatarak terletin (patlıcanların kabuğu kolay soyulsun diye).",
+                "Lavaş ekmeği ile servis yapın."
+            ]
+        }
+    },
+    {
+        id: "lebeni",
+        name: "Lebeni",
+        description: "Yoğurt, dövme buğday ve nohutla yapılan, soğuk içilen ferahlatıcı bir çorba.",
+        imageUrl: "/images/lebeni.png",
+        category: "Çorba",
+        isFeatured: false,
+        recipe: {
+            prepTime: "10 dk",
+            cookTime: "40 dk",
+            servings: "6 Kişilik",
+            ingredients: [
+                "1 su bardağı dövme buğday (aşurelik)",
+                "1/2 su bardağı nohut",
+                "1 kg süzme yoğurt",
+                "Su",
+                "Tuz"
+            ],
+            instructions: [
+                "Buğday ve nohudu akşamdan ıslatın.",
+                "Ertesi gün yumuşayana kadar haşlayın ve soğumaya bırakın.",
+                "Yoğurdu su ile ayran kıvamına getirin (çok sulu olmasın).",
+                "Haşlanmış buğday ve nohudu yoğurda ekleyin.",
+                "Tuzunu ayarlayıp soğuk servis yapın."
+            ]
+        }
+    },
+    {
+        id: "tirit",
+        name: "Tirit",
+        description: "Bayat ekmeklerin et suyu ile ıslatılıp üzerine didiklenmiş et ve yoğurt eklenmesiyle yapılan doyurucu bir yemek.",
+        imageUrl: "/images/tirit.png",
+        category: "Ana Yemek",
+        isFeatured: false,
+        recipe: {
+            prepTime: "20 dk",
+            cookTime: "120 dk",
+            servings: "6 Kişilik",
+            ingredients: [
+                "500 gr kemikli kuzu eti",
+                "2 adet bayat tırnaklı ekmek",
+                "2 su bardağı yoğurt",
+                "3 diş sarımsak",
+                "1 yemek kaşığı tereyağı",
+                "Pul biber"
+            ],
+            instructions: [
+                "Eti bol suda iyice haşlayın, etleri kemiklerinden ayırıp didikleyin.",
+                "Ekmekleri küp küp doğrayıp servis tabağına alın.",
+                "Sıcak et suyu ile ekmekleri ıslatın.",
+                "Üzerine sarımsaklı yoğurdu dökün.",
+                "Didiklenmiş etleri yoğurdun üzerine yerleştirin.",
+                "Tereyağında pul biberi yakıp üzerine gezdirin."
+            ]
+        }
+    },
+    {
+        id: "billuriye",
+        name: "Billuriye",
+        description: "Tel kadayıfın bol fıstıkla buluştuğu, şerbetli ama çıtır çıtır kalan özel bir tatlı.",
+        imageUrl: "/images/billuriye.png",
+        category: "Tatlı",
+        isFeatured: true,
+        recipe: {
+            prepTime: "30 dk",
+            cookTime: "40 dk",
+            servings: "8 Kişilik",
+            ingredients: [
+                "500 gr tel kadayıf",
+                "250 gr tereyağı",
+                "300 gr toz antep fıstığı",
+                "Şerbeti için: 3 su bardağı şeker, 2.5 su bardağı su, limon suyu"
+            ],
+            instructions: [
+                "Kadayıfları didikleyin.",
+                "Tepsiyi yağlayıp kadayıfın yarısını bastırarak döşeyin.",
+                "Üzerine bolca fıstık serpin.",
+                "Kalan kadayıfı üzerine kapatıp tekrar bastırın.",
+                "Eritilmiş tereyağını üzerine gezdirin.",
+                "Kısık ateşte veya fırında nar gibi kızarana kadar pişirin.",
+                "Ilık tatlıya ılık şerbeti dökün."
             ]
         }
     }

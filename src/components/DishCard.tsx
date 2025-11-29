@@ -9,9 +9,11 @@ import styles from './DishCard.module.css';
 interface DishCardProps {
     dish: Dish;
     index?: number;
+    buttonText?: string;
+    linkPrefix?: string;
 }
 
-export default function DishCard({ dish, index = 0 }: DishCardProps) {
+export default function DishCard({ dish, index = 0, buttonText = "Tarifi Gör", linkPrefix = "/yemek" }: DishCardProps) {
     return (
         <motion.div
             className={styles.card}
@@ -35,8 +37,8 @@ export default function DishCard({ dish, index = 0 }: DishCardProps) {
                 <h3 className={styles.title}>{dish.name}</h3>
                 <p className={styles.description}>{dish.description}</p>
                 <div className={styles.footer}>
-                    <Link href={`/yemek/${dish.id}`} className="btn btn-outline" style={{ width: '100%' }}>
-                        Tarifi Gör
+                    <Link href={`${linkPrefix}/${dish.id}`} className="btn btn-outline" style={{ width: '100%' }}>
+                        {buttonText}
                     </Link>
                 </div>
             </div>
