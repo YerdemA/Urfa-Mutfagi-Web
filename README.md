@@ -1,8 +1,16 @@
 # Urfa Mutfak Kültürü Web Sitesi 🌶️
+<div align="left">
+  <img src="https://img.shields.io/badge/Framework-Next.js_14-black?style=flat-square&logo=next.js&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/Language-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Style-Vanilla_CSS-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS" />
+  <img src="https://img.shields.io/badge/Animation-Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white" alt="Framer Motion" />
+  <img src="https://img.shields.io/badge/Icons-Phosphor_Icons-C4D600?style=flat-square" alt="Phosphor Icons" />
+  <img src="https://img.shields.io/badge/Fonts-Google_Fonts-4285F4?style=flat-square&logo=google-fonts&logoColor=white" alt="Google Fonts" />
+</div>
 
 Bu proje, Şanlıurfa'nın köklü ve zengin yemek kültürünü modern bir web deneyimiyle dünyaya tanıtmak amacıyla geliştirilmiştir. Geleneksel lezzetler, modern web teknolojileri ve estetik bir tasarımla buluşturulmuştur.
 
-![Urfa Mutfak Kültürü](public/images/hero-bg.jpg)
+<img width="1901" height="866" alt="image" src="https://github.com/user-attachments/assets/da88d59d-799a-47db-ae56-af2377a24f42" />
 
 ## 🚀 Proje Hakkında
 
